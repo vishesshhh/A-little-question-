@@ -21,7 +21,7 @@ h1{font-size:clamp(40px,8vw,62px);margin:0;color:#d92459}
 .intro-top .tiny{margin-top:13px;font-size:clamp(19px,4vw,28px)}
 .score{font-size:clamp(28px,5vw,40px);font-weight:600;margin-top:22px;color:#df3c67}
 
-.catch{position:absolute;transform:translate(-50%,-50%);background:none;font-size:clamp(58px,12vw,90px);filter:drop-shadow(0 8px 10px rgba(222,40,84,.2));animation:bob 2.5s ease-in-out infinite;transition:.18s}
+.catch{position:absolute;transform:translate(-50%,-50%);background:none;font-size:clamp(58px,12vw,90px);filter:drop-shadow(0 8px 10px rgba(222,40,84,.2));animation:bob 2.5s ease-in-out infinite;transition:transform .12s,opacity .12s}
 .catch:active{transform:translate(-50%,-50%) scale(.7);opacity:0}
 .catch.decoy{opacity:.62;pointer-events:none}
 .success-pop{position:absolute;top:72%;font-size:25px;color:#db2f65;animation:pop .7s ease both}
@@ -109,7 +109,7 @@ h1{font-size:clamp(40px,8vw,62px);margin:0;color:#d92459}
 
 .final-card h3{margin:53px 0 0;color:#d92357;font-size:clamp(31px,6vw,48px)}
 .looks{margin-top:27px;color:#8438cc;font-size:clamp(24px,5vw,35px)}
-.sign{margin-top:48px;color:#df526f;font-size:27px}
+.sign{margin-top:48px;color:#df526f;font-size:40px}
 .big-heart{font-size:65px;animation:heartbeat 1.3s infinite;margin-bottom:15px}
 .final-hearts{margin-top:38px;font-size:38px;letter-spacing:16px;animation:float .9s ease-in-out infinite alternate}
 
@@ -124,7 +124,7 @@ h1{font-size:clamp(40px,8vw,62px);margin:0;color:#d92459}
 .burst span{position:absolute;left:50%;top:50%;font-size:24px;animation:burst 1s ease-out forwards;transform:rotate(var(--a)) translateY(0)}
 .transition-hearts{position:fixed;inset:0;pointer-events:none;z-index:30}
 
-@keyframes rise{0%{transform:translateY(0) translateX(0) rotate(-8deg);opacity:0}10%{opacity:.5}50%{transform:translateY(-55vh) translateX(var(--drift)) rotate(8deg)}100%{transform:translateY(-125vh) translateX(calc(var(--drift) * -1)) rotate(-7deg);opacity:0}}
+@keyframes rise{0%{transform:translateY(0) translateX(0) rotate(-8deg);opacity:0}10%{opacity:.5}50%{transform:translateY(-55vh) translateX(var(--drift)) rotate(8deg)}100%{transform:translateY(-125vh) translateX(var(--drift)) rotate(-8deg);opacity:0}}
 @keyframes bob{0%,100%{margin-top:0}50%{margin-top:-8px}}
 @keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:1;transform:scale(1.3)}}
 @keyframes glow{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
