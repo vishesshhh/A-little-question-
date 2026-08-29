@@ -23,7 +23,7 @@ function render(){
 function intro(el){
   let caught=0,pops=[];
   const positions=[[17,38],[83,38],[17,65],[83,65],[50,86],[38,87],[63,87]];
-  el.innerHTML=`<section class="screen intro"><div class="intro-top"><h1>Hey dear <span>❤️</span></h1><p>I have a little question for you...</p><p class="tiny">Catch the hearts first 👀</p><div class="score">Hearts: 0/5 ❤️</div></div>${positions.map(([x,y],i)=>`<button class="catch ${i<5?'':'decoy'}" style="left:${x}%;top:${y}%;animation-delay:${i*.18}s">❤️</button>`).join('')}</section>`;
+  el.innerHTML=`<section class="screen intro"><div class="intro-top"><h1>Hey Upma <span>❤️</span></h1><p>I have a little question for you...</p><p class="tiny">Catch the hearts first 👀</p><div class="score">Hearts: 0/5 ❤️</div></div>${positions.map(([x,y],i)=>`<button class="catch ${i<5?'':'decoy'}" style="left:${x}%;top:${y}%;animation-delay:${i*.18}s">❤️</button>`).join('')}</section>`;
   const buttons=el.querySelectorAll('.catch');
   buttons.forEach((b,i)=>b.onclick=()=>{
     if(i>=5||i<0)return;
@@ -86,6 +86,6 @@ function question(el){
   };
   yes.onclick=()=>{el.insertAdjacentHTML('beforeend',burst(26));setTimeout(()=>{stage=4;render()},850)};
 }
-function final(el){el.innerHTML=`<section class="screen final"><div class="final-card"><div class="big-heart">❤️</div><h2>Wanna have some gulu gulu? ❤️</h2><p class="with">With me? 😳</p><h3>HEHE... I KNEW IT! ❤️</h3><p class="looks">Looks like it's a YES. 🙈</p><p class="sign">— dev</p><div class="final-hearts">💕 💗 💕</div></div></section>`;}
+function final(el){el.innerHTML=`<section class="screen final"><div class="final-card"><div class="big-heart">❤️</div><h2>Wanna have some gulu gulu? ❤️</h2><p class="with">With me? 😳</p><h3>HEHE... I KNEW IT! ❤️</h3><p class="looks">Looks like it's a YES. 🙈</p><p class="sign">— Vishesh</p><div class="final-hearts">💕 💗 💕</div></div></section>`;}
 
 document.addEventListener('DOMContentLoaded',render);
