@@ -86,6 +86,6 @@ function question(el){
   };
   yes.onclick=()=>{el.insertAdjacentHTML('beforeend',burst(26));setTimeout(()=>{stage=4;render()},850)};
 }
-function final(el){el.innerHTML=`<section class="screen final"><div class="final-card"><div class="big-heart">❤️</div><h2>Wanna have some gulu gulu? ❤️</h2><p class="with">With me? 😳</p><h3>HEHE... I KNEW IT! ❤️</h3><p class="looks">Looks like it's a YES. 🙈</p><p class="sign">— dev</p><div class="final-hearts">💕 💗 💕</div></div></section>`;}
+function final(el){el.innerHTML=`<section class="screen final"><div class="final-card"><div class="big-heart">❤️</div><h2>Wanna have some gulu gulu? ❤️</h2><p class="with">With me? 😳</p><h3>HEHE... I KNEW IT! ❤️</h3><p class="looks">Looks like it's a YES. 🙈</p><p class="sign">— Dev</p><div class="final-hearts">💕 💗 💕</div></div></section>`;}
 
 document.addEventListener('DOMContentLoaded',render);
