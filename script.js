@@ -23,7 +23,7 @@ function render(){
 function intro(el){
   let caught=0,pops=[];
   const positions=[[17,38],[83,38],[17,65],[83,65],[50,86],[38,87],[63,87]];
-  el.innerHTML=`<section class="screen intro"><div class="intro-top"><h1>Hey Upma <span>❤️</span></h1><p>I have a little question for you...</p><p class="tiny">Catch the hearts first 👀</p><[...]`
+  el.innerHTML=`<section class="screen intro"><div class="intro-top"><h1>Hey dear <span>❤️</span></h1><p>I have a little question for you...</p><p class="tiny">Catch the hearts first 👀</p><[...]`
   const buttons=el.querySelectorAll('.catch');
   buttons.forEach((b,i)=>b.onclick=()=>{
     if(i>=5||i<0)return;
